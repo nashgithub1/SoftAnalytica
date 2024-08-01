@@ -1,0 +1,264 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    background-image: url('https://e1.pxfuel.com/desktop-wallpaper/614/782/desktop-wallpaper-dark-textured-backgrounds-design-patterns-website-psd-black-background-with-designs.jpg');
+    font-family: sans-serif;
+    min-height: 100vh;
+    width: 100%;
+}
+nav {
+    padding: 5px 20px;
+    display: flex;
+    align-items: center;
+    background: transparent;
+}
+
+nav a {
+    color: #fff;
+}
+nav a:hover {
+    color: #8A2BE2;
+}
+.menu {
+    display: flex;
+    align-items: center;
+    list-style: none;
+}
+
+.menu li {
+    padding: 15px 10px;
+    font-size: 16px;
+}
+
+.menu li a {
+    text-decoration: none;
+    color: #fff;
+}
+
+.menu li a:hover {
+    color: #8A2BE2;
+}
+.logo {
+    flex: 1;
+}
+
+.logo a {
+    display: flex;
+    align-items: center;
+    font-size: 20px;
+    text-decoration: none;
+}
+
+.logo a:hover {
+    color: #fff;
+}
+
+.logo img {
+    width: 40px;
+    margin-right: 10px;
+    border-radius: 50%;
+}
+.logout-btn {
+    border: none;
+    background-color: #73818f;
+    color: #fff;
+    text-align: center;
+    font-size: 18px;
+    border-radius: 15px;
+    transition: background-color 0.3s, transform 0.3s;
+    cursor: pointer;
+    text-decoration: none;
+    width: 100px;
+    height: 25px;
+}
+
+.logout-btn:active {
+    background-color: #6e3291;
+}
+.about-container {
+    max-width: 900px;
+    margin: 0 auto;
+    font-family: "Roboto", sans-serif;
+  }
+  
+  .about-container p {
+    line-height: 2;
+    padding: 0 20px;
+  }
+  
+  .about-container .profile-image {
+    text-align: center;
+    padding: 30px;
+  }
+  
+  .about-container .profile-image img {
+    width: 200px;
+    border-radius: 50%;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.4);
+    padding: 8px;
+  }
+  
+.container 
+{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 80vh;
+    width: 100%;
+}
+.description {
+    position: relative;
+    width: 90%; 
+    max-width: 1000px; 
+    height: auto;
+    border: 2px solid rgba(255, 255, 255, 0.5);
+    border-radius: 20px;
+    backdrop-filter: blur(15px);
+    display: flex;
+    flex-direction: column; 
+    justify-content: center;
+    align-items: center;
+    padding: 20px; 
+    color: #fff;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
+.description p {
+    text-align: center; 
+    margin: 0; 
+    padding: 10px 20px;
+}
+
+h1
+{
+    color: #fff;
+    text-align: center;
+    font-size: 48px;
+}
+.description h2 {
+    color: #fff;
+    text-align: center;
+    font-size: 28px;
+}
+.our-team-heading {
+    text-align: center;
+    font-size: 48px;
+    padding-top: 64px;
+    color: #ffffff;
+}
+  
+.our-team {
+    display: flex;
+    padding: 30px;
+}
+  
+.our-team img {
+    width: 180px;
+    border-radius: 10px;
+    height: 200px;
+}
+  
+.our-team .team-member {
+    margin: 0 4px;
+    position: relative;
+    color: #fff;
+    padding: 5px;
+}
+
+.our-team .name {
+    position: absolute;
+    bottom: 30px;
+    background: #0c0c0c;
+    padding: 12px 20px;
+    border-radius: 0 20px 20px 0;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.4);
+    font-size: 14px;
+}
+  
+.about-container .our-mission {
+    padding: 20px;
+    position: relative;
+    display: flex;
+    align-items: center;
+}
+.our-mission p {
+    margin-left: 100px;
+    padding-bottom: 30px;
+    font-size: 20px;
+    font-style: italic;
+    color: aliceblue;
+    text-align: center;
+}
+footer {
+    padding: 10px;
+    background: #000;
+    color: #fff;
+    text-align: center;
+    padding: 10px 10px;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    height: 50px;
+    z-index: 5;
+}
+
+.footer-content {
+    color: #fff;
+    text-align: center;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+.toggle {
+    font-size: 30px;
+    display: none;
+}
+  
+@media (max-width: 600px) {
+    .our-team {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .our-team img {
+        height: 250px;
+        width: 300px;
+        object-fit: cover;
+    }
+    .menu {
+        margin-top: 15px;
+        display: none;
+        flex-direction: column;
+        width: 100%;
+    }
+
+    .menu.active {
+        display: flex;
+    }
+
+    .menu li {
+        width: 100%;
+        text-align: center;
+        padding: 10px 0;
+    }
+    .toggle {
+        display: block;
+        position: absolute;
+        top: 15px;
+        right: 20px;
+        cursor: pointer;
+    }
+    .description {
+        width: 100%;
+        height: auto; 
+    }
+
+    .description p {
+        padding: 10px;
+    }
+}

@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About Us - SoftAnalytica</title>
+    <link rel="stylesheet" href="about.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/odometer.js/0.4.8/themes/odometer-theme-default.min.css"/>
+</head>
+<body>
+    <nav>
+        <div class="logo">
+            <a href="#">
+                <img src="logo2.png" alt="logo">
+                <h2>SoftAnalytica</h2>
+            </a>
+        </div>
+        <div class="toggle">
+            <a href="#"><ion-icon name="menu-outline"></ion-icon></a>
+        </div>
+        <ul class="menu">
+            <li><a href="login.php">Home</a></li>
+            <li><a href="#">Contact us</a></li>
+            <li><a href="logout.php"><button class="logout-btn">LogOut</button></a></li>
+        </ul>
+    </nav>
+    <div class="about-container">
+    <h1>About Us</h2>
+    <div class="container">
+        <div class="description">
+
+            <p>
+                We are Team Trouble Shouters, a group of passionate students pursuing a BSc degree in the Department of Computing, 
+                Faculty of Applied Science, at Rajarata University of Sri Lanka. Our website focuses on developing 
+                a skill-based job recommendation system for undergraduates. Our website provides a comprehensive platform for soft skill 
+                ssessment and career guidance, offering quizzes to evaluate skills.Based on these assessments, users receive personalized
+                career recommendations, can track their progress, 
+                and access resources to enhance their skills. Our vision is to empower undergraduates with the knowledge 
+                and confidence to pursue careers that match their skills and passions, bridging the gap between academic learning and professional success.
+            </p>
+        </div>
+    </div>
+        <h2 class="our-team-heading"> Our Team  </h2>
+        <div class="our-team">
+            <div class="team-member">
+                <img src="images_SA/akhlaq.jpg" alt="">
+                <div class="name">
+                   <strong>A.M.A Hussain </strong>
+                </div>
+            </div>
+            <div class="team-member">
+                <img src="images_SA/hiba.jpg" alt="">
+                <div class="name">
+                   <strong>A.F Hiba </strong>
+                </div>
+            </div>
+            <div class="team-member">
+                <img src="images_SA/nashath.jpg" alt="">
+                <div class="name">
+                   <strong>M.J.M Nashath </strong>
+                </div>
+            </div>
+            <div class="team-member">
+                <img src="images_SA/nasra.jpg" alt="">
+                <div class="name">
+                   <strong>M.I.F Nasra</strong>
+                </div>
+            </div>
+            <div class="team-member">
+                <img src="images_SA/rishny.jpg" alt="">
+                <div class="name">
+                   <strong>M.A.R.M Rishny </strong>
+                </div>
+            </div>
+        </div>
+        <div class="our-mission">
+            <p>Our mission is to suggest the career path for the undergraduates</p>
+
+        </div>
+    </div>  
+    <footer>
+        <div class="footer-content">
+            <p>Designed and Developed by Team Trouble Shouters. All rights reserved.<br>&copy; Copyright 2024</p>
+        </div>
+    </footer>
+ <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+    <script>
+        document.addEventListener("DOMContentLoaded", function() {
+            const toggle = document.querySelector(".toggle a");
+            const menu = document.querySelector(".menu");
+
+            toggle.addEventListener("click", function(e) {
+                e.preventDefault();
+                menu.classList.toggle("active");
+                if (menu.classList.contains("active")) {
+                    toggle.innerHTML = "<ion-icon name='close-outline'></ion-icon>";
+                } else {
+                    toggle.innerHTML = "<ion-icon name='menu-outline'></ion-icon>";
+                }
+            });
+        });
+    </script>
+</body>
+</html>
